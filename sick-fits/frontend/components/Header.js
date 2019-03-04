@@ -1,6 +1,13 @@
 import Nav from "./Nav";
 import Link from "next/link";
 import styled from "styled-components";
+import Router from "next/router";
+import NProgress from "nprogress";
+
+// allows us to make oruting smoother byt notifying the user about that
+Router.onRouteChangeStart = () => {};
+Router.onRouteChangeComplete = () => {};
+Router.onRouteChangeError = () => {};
 
 const Logo = styled.h1`
   font-size: 4rem;
